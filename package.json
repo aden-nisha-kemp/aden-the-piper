@@ -4,8 +4,7 @@
   "description": "Aden the Piper — Professional Scottish Highland Bagpiper portfolio for Suzanne Aden Kemp.",
   "scripts": {
     "start": "node server.js",
-    "dev": "node server.js",
-    "build": "echo 'Build complete'"
+    "dev": "node server.js"
   },
   "keywords": [
     "portfolio",
