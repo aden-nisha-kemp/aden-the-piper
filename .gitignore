@@ -1,0 +1,6 @@
+node_modules/
+scratch/
+check_clipboard.ps1
+clipboard_image.png
+*.log
+.DS_Store

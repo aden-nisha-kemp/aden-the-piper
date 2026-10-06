@@ -1,0 +1,935 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gallery & Videos — Aden the Piper | Suzanne Aden Kemp</title>
+  <link rel="canonical" href="https://adenthepiper.com/gallery/">
+  <meta name="description" content="Watch video performances and view photos of professional Scottish Highland bagpiper Suzanne “Aden” Kemp across New Mexico, the Southwest, and nationwide.">
+  <link rel="sitemap" type="application/xml" href="/sitemap.xml">
+  <link href="../assets/images/Y18GEjPTJ8Inks9zox5UQY7sNs.svg" rel="icon" media="(prefers-color-scheme: light)">
+  <link href="../assets/images/GROVCYsIyzfic1IhPU9defmxugo.svg" rel="icon" media="(prefers-color-scheme: dark)">
+  <link rel="apple-touch-icon" href="../assets/images/mdDjKJvqumQQGWDKqM0OwZ5fsM.png">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Gallery & Videos — Aden the Piper">
+  <meta property="og:description" content="Watch bagpipe performances and view photos from weddings, memorials, and festivals.">
+  <meta property="og:image" content="../assets/images/piper.jpg">
+
+  <link href="../assets/css/lenis.css" rel="stylesheet">
+  <style>
+    @font-face {
+      font-family: 'Geist';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url(../assets/fonts/gyByhwUxId8gMEwRGFWfOw.woff2) format('woff2');
+    }
+    @font-face {
+      font-family: 'Geist';
+      font-style: normal;
+      font-weight: 700;
+      font-display: swap;
+      src: url(../assets/fonts/gK1qU_5hUeBqf_m.woff2) format('woff2');
+    }
+    @font-face {
+      font-family: 'Geist';
+      font-style: normal;
+      font-weight: 900;
+      font-display: swap;
+      src: url(../assets/fonts/gK1qU_5hUeBqf_m.woff2) format('woff2');
+    }
+
+    :root {
+      --bg: #0a0a0a;
+      --card-bg: #141414;
+      --accent: #ffff00;
+      --text: #ffffff;
+      --muted: #8a8a8a;
+      --border: rgba(255, 255, 255, 0.1);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      overflow-x: hidden;
+      line-height: 1.5;
+    }
+
+    /* Header Nav */
+    header {
+      position: fixed;
+      top: 20px;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      display: flex;
+      justify-content: center;
+      padding: 0 20px;
+    }
+    .nav-bar {
+      width: 100%;
+      max-width: 1320px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: rgba(10, 10, 10, 0.7);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 14px 24px;
+    }
+    .nav-brand {
+      font-weight: 700;
+      font-size: 14px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: #fff;
+      text-decoration: none;
+    }
+    .nav-links {
+      display: flex;
+      gap: 24px;
+      align-items: center;
+    }
+    .nav-links a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      transition: color 0.2s ease;
+    }
+    .nav-links a:hover, .nav-links a.active {
+      color: var(--accent);
+    }
+
+    /* Container */
+    .container {
+      max-width: 1320px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* Hero */
+    .gallery-hero {
+      padding-top: 150px;
+      padding-bottom: 60px;
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+      position: relative;
+    }
+    .tag {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 12px;
+      display: inline-block;
+    }
+    .hero-title {
+      font-size: clamp(38px, 7vw, 92px);
+      font-weight: 900;
+      line-height: 0.95;
+      text-transform: uppercase;
+      letter-spacing: -0.04em;
+      margin-bottom: 24px;
+    }
+    .hero-subtitle {
+      font-size: clamp(16px, 2vw, 20px);
+      color: var(--muted);
+      max-width: 820px;
+      line-height: 1.6;
+    }
+
+    /* Video Section */
+    .section-title-wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-top: 80px;
+      margin-bottom: 36px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--border);
+    }
+    .section-title {
+      font-size: clamp(24px, 4vw, 44px);
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: -0.02em;
+    }
+
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+      gap: 28px;
+      margin-bottom: 80px;
+    }
+    .video-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.3s ease, border-color 0.3s ease;
+    }
+    .video-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(255, 255, 0, 0.4);
+    }
+    .video-thumb-wrap {
+      position: relative;
+      aspect-ratio: 16 / 9;
+      background: #000;
+      overflow: hidden;
+      cursor: pointer;
+    }
+    .video-thumb-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+    .video-card:hover .video-thumb-wrap img {
+      transform: scale(1.04);
+    }
+    .play-badge {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 60px;
+      height: 60px;
+      background: rgba(10, 10, 10, 0.75);
+      border: 2px solid var(--accent);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.2s ease, background 0.2s ease;
+    }
+    .play-badge svg {
+      fill: var(--accent);
+      width: 20px;
+      height: 20px;
+      margin-left: 3px;
+    }
+    .video-card:hover .play-badge {
+      transform: translate(-50%, -50%) scale(1.12);
+      background: var(--accent);
+    }
+    .video-card:hover .play-badge svg {
+      fill: #0a0a0a;
+    }
+    .video-info {
+      padding: 24px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .video-title {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: #fff;
+    }
+    .video-desc {
+      font-size: 14px;
+      color: var(--muted);
+      margin-bottom: 20px;
+      line-height: 1.5;
+    }
+    .video-action-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: transparent;
+      border: 1px solid var(--border);
+      color: #fff;
+      padding: 10px 18px;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      cursor: pointer;
+      border-radius: 4px;
+      transition: all 0.2s ease;
+    }
+    .video-action-btn:hover {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #0a0a0a;
+    }
+
+    /* Photo Filters */
+    .filter-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 32px;
+    }
+    .filter-btn {
+      background: transparent;
+      border: 1px solid var(--border);
+      color: var(--muted);
+      padding: 8px 18px;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+    .filter-btn:hover, .filter-btn.active {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #0a0a0a;
+    }
+
+    /* Photo Grid */
+    .photo-grid {
+      columns: 3 320px;
+      column-gap: 24px;
+      margin-bottom: 100px;
+    }
+    .photo-card {
+      break-inside: avoid;
+      margin-bottom: 24px;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+      cursor: pointer;
+      transition: transform 0.3s ease, border-color 0.3s ease;
+      position: relative;
+    }
+    .photo-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(255, 255, 0, 0.5);
+    }
+    .photo-card img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+    .photo-card:hover img {
+      transform: scale(1.03);
+    }
+    .photo-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, transparent 60%, rgba(10, 10, 10, 0.95) 100%);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      display: flex;
+      align-items: flex-end;
+      padding: 16px;
+    }
+    .photo-card:hover .photo-overlay {
+      opacity: 1;
+    }
+    .photo-caption {
+      font-size: 13px;
+      font-weight: 600;
+      color: #fff;
+    }
+
+    /* Modal Player & Lightbox */
+    .modal-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.92);
+      backdrop-filter: blur(12px);
+      z-index: 100000;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+    .modal-overlay.active {
+      display: flex;
+    }
+    .modal-content {
+      max-width: 960px;
+      width: 100%;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+      position: relative;
+      animation: modalFadeIn 0.3s ease;
+    }
+    @keyframes modalFadeIn {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+    .modal-close {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      background: rgba(10, 10, 10, 0.8);
+      border: 1px solid var(--border);
+      color: #fff;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      cursor: pointer;
+      z-index: 10;
+      transition: background 0.2s;
+    }
+    .modal-close:hover {
+      background: var(--accent);
+      color: #0a0a0a;
+    }
+    .modal-body {
+      padding: 0;
+    }
+    .modal-media-wrap {
+      width: 100%;
+      background: #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .modal-media-wrap img {
+      max-width: 100%;
+      max-height: 80vh;
+      object-fit: contain;
+    }
+    .audio-player-ui {
+      padding: 40px;
+      text-align: center;
+    }
+    .waveform-visualizer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 4px;
+      height: 60px;
+      margin: 24px 0;
+    }
+    .wave-bar {
+      width: 6px;
+      background: var(--accent);
+      border-radius: 3px;
+      height: 10px;
+      animation: waveBounce 0.8s ease-in-out infinite alternate;
+    }
+    @keyframes waveBounce {
+      0% { height: 8px; }
+      100% { height: 50px; }
+    }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 80px 0 40px;
+      background: #0a0a0a;
+    }
+    .footer-fit-text {
+      font-size: clamp(48px, 12vw, 160px);
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: -0.05em;
+      line-height: 0.85;
+      color: var(--accent);
+      text-align: center;
+      margin-bottom: 60px;
+      display: block;
+      text-decoration: none;
+    }
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 30px;
+      border-top: 1px solid var(--border);
+      gap: 20px;
+    }
+    .footer-nav {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+    .footer-nav a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .footer-nav a:hover {
+      color: var(--accent);
+    }
+    .copyright {
+      color: var(--muted);
+      font-size: 12px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    @media (max-width: 768px) {
+      .video-grid { grid-template-columns: 1fr; }
+      .photo-grid { columns: 1; }
+      .nav-links { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <nav class="nav-bar">
+      <a href="../" class="nav-brand">SUZANNE ADEN KEMP · ADEN THE PIPER</a>
+      <div class="nav-links">
+        <a href="../">Home</a>
+        <a href="../projects/">Performances</a>
+        <a href="./" class="active">Gallery</a>
+        <a href="../contact/">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <!-- Hero -->
+    <section class="gallery-hero">
+      <span class="tag">Watch, Listen &amp; Explore</span>
+      <h1 class="hero-title">Gallery &amp;<br>Performances</h1>
+      <p class="hero-subtitle">
+        Explore live Great Highland Bagpipe video performances, solemn graveside recordings, Scottish wedding ceremonies, and photographic moments captured by Suzanne “Aden” Kemp across New Mexico, the Southwest, and nationwide.
+      </p>
+    </section>
+
+    <!-- Video Showcase -->
+    <section>
+      <div class="section-title-wrap">
+        <div>
+          <span class="tag">Live Audio &amp; Video Showcase</span>
+          <h2 class="section-title">Watch &amp; Listen to Performances</h2>
+        </div>
+      </div>
+
+      <div class="video-grid">
+        <!-- Video 1 -->
+        <article class="video-card" onclick="openPlayer('Amazing Grace — Solemn Memorial Tribute', 'Graveside farewell and memorial tribute played on Great Highland Bagpipes by Suzanne Aden Kemp.', '../assets/images/aden_3.jpg', 440)">
+          <div class="video-thumb-wrap">
+            <img src="../assets/images/aden_3.jpg" alt="Amazing Grace Bagpipe Memorial">
+            <div class="play-badge">
+              <svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            </div>
+          </div>
+          <div class="video-info">
+            <div>
+              <h3 class="video-title">Amazing Grace</h3>
+              <p class="video-desc">Solemn cemetery graveside tribute and memorial processional.</p>
+            </div>
+            <button class="video-action-btn">▶ Play Performance</button>
+          </div>
+        </article>
+
+        <!-- Video 2 -->
+        <article class="video-card" onclick="openPlayer('Scotland the Brave & The Rowan Tree', 'Highland march set performed in full military band dress uniform.', '../assets/images/piper.jpg', 466)">
+          <div class="video-thumb-wrap">
+            <img src="../assets/images/piper.jpg" alt="Scotland the Brave Bagpipes">
+            <div class="play-badge">
+              <svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            </div>
+          </div>
+          <div class="video-info">
+            <div>
+              <h3 class="video-title">Scotland the Brave &amp; Rowan Tree</h3>
+              <p class="video-desc">Traditional Scottish Highland march set with full drone acoustics.</p>
+            </div>
+            <button class="video-action-btn">▶ Play Performance</button>
+          </div>
+        </article>
+
+        <!-- Video 3 -->
+        <article class="video-card" onclick="openPlayer('Highland Cathedral', 'Majestic Celtic ceremony anthem for weddings and formal celebrations.', '../assets/images/aden_2.jpg', 480)">
+          <div class="video-thumb-wrap">
+            <img src="../assets/images/aden_2.jpg" alt="Highland Cathedral Wedding Bagpipes">
+            <div class="play-badge">
+              <svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            </div>
+          </div>
+          <div class="video-info">
+            <div>
+              <h3 class="video-title">Highland Cathedral</h3>
+              <p class="video-desc">Celebratory wedding processional and formal cathedral anthem.</p>
+            </div>
+            <button class="video-action-btn">▶ Play Performance</button>
+          </div>
+        </article>
+
+        <!-- Video 4 -->
+        <article class="video-card" onclick="openPlayer('Going Home / Mist Covered Mountains', 'Poignant Celtic air for remembrance services and military honors.', '../assets/images/aden_gallery_18.jpg', 440)">
+          <div class="video-thumb-wrap">
+            <img src="../assets/images/aden_gallery_18.jpg" alt="Going Home Bagpipes">
+            <div class="play-badge">
+              <svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            </div>
+          </div>
+          <div class="video-info">
+            <div>
+              <h3 class="video-title">Going Home</h3>
+              <p class="video-desc">Haunting slow air tribute for remembrance honors and reflections.</p>
+            </div>
+            <button class="video-action-btn">▶ Play Performance</button>
+          </div>
+        </article>
+
+        <!-- Video 5 -->
+        <article class="video-card" onclick="openPlayer('Pipe Band Competition & Street Parade', 'Ensemble pipe band direction and synchronization in Albuquerque.', '../assets/images/aden_1.jpg', 472)">
+          <div class="video-thumb-wrap">
+            <img src="../assets/images/aden_1.jpg" alt="Pipe Band Street Parade">
+            <div class="play-badge">
+              <svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            </div>
+          </div>
+          <div class="video-info">
+            <div>
+              <h3 class="video-title">Pipe Band Street Parade</h3>
+              <p class="video-desc">Massed pipe band marching ensemble and street honors.</p>
+            </div>
+            <button class="video-action-btn">▶ Play Performance</button>
+          </div>
+        </article>
+
+        <!-- Video 6 -->
+        <article class="video-card" onclick="openPlayer('Flower of Scotland & Green Hills of Tyrol', 'Gathering anthem and traditional retreat air.', '../assets/images/aden_gallery_5.jpg', 450)">
+          <div class="video-thumb-wrap">
+            <img src="../assets/images/aden_gallery_5.jpg" alt="Flower of Scotland Bagpipes">
+            <div class="play-badge">
+              <svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            </div>
+          </div>
+          <div class="video-info">
+            <div>
+              <h3 class="video-title">Flower of Scotland</h3>
+              <p class="video-desc">Stirring national anthem and traditional Scottish retreat air.</p>
+            </div>
+            <button class="video-action-btn">▶ Play Performance</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Photo Gallery -->
+    <section>
+      <div class="section-title-wrap">
+        <div>
+          <span class="tag">High-Resolution Photography</span>
+          <h2 class="section-title">Explore Photos</h2>
+        </div>
+      </div>
+
+      <!-- Filters -->
+      <div class="filter-bar">
+        <button class="filter-btn active" onclick="filterPhotos('all', this)">All (21)</button>
+        <button class="filter-btn" onclick="filterPhotos('weddings', this)">Weddings</button>
+        <button class="filter-btn" onclick="filterPhotos('memorials', this)">Memorials &amp; Honors</button>
+        <button class="filter-btn" onclick="filterPhotos('parades', this)">Pipe Band &amp; Parades</button>
+        <button class="filter-btn" onclick="filterPhotos('ceremonies', this)">Ceremonies</button>
+      </div>
+
+      <!-- Photos Grid -->
+      <div class="photo-grid" id="photoGrid">
+        <div class="photo-card" data-cat="parades" onclick="openLightbox('../assets/images/aden_1.jpg', 'Suzanne Aden Kemp leading the massed pipe band march')">
+          <img src="../assets/images/aden_1.jpg" alt="Suzanne Aden Kemp Leading Pipe Band" loading="lazy">
+          <div class="photo-overlay"><span class="photo-caption">Pipe Band Street March · Albuquerque</span></div>
+        </div>
+        <div class="photo-card" data-cat="weddings" onclick="openLightbox('../assets/images/aden_2.jpg', 'Scottish wedding celebration with Suzanne Aden Kemp as featured piper')">
+          <img src="../assets/images/aden_2.jpg" alt="Scottish Wedding Bagpiper" loading="lazy">
+          <div class="photo-overlay"><span class="photo-caption">Scottish Wedding Celebration</span></div>
+        </div>
+        <div class="photo-card" data-cat="memorials" onclick="openLightbox('../assets/images/aden_3.jpg', 'Solemn graveside memorial tribute performance')">
+          <img src="../assets/images/aden_3.jpg" alt="Memorial Bagpipe Performance" loading="lazy">
+          <div class="photo-overlay"><span class="photo-caption">Solemn Memorial Tribute · Santa Fe National Cemetery</span></div>
+        </div>
+        <div class="photo-card" data-cat="ceremonies" onclick="openLightbox('../assets/images/piper.jpg', 'Full Great Highland Bagpipe dress uniform portrait')">
+          <img src="../assets/images/piper.jpg" alt="Suzanne Aden Kemp Piper Portrait" loading="lazy">
+          <div class="photo-overlay"><span class="photo-caption">Formal Highland Uniform Portrait</span></div>
+        </div>
+        <div class="photo-card" data-cat="weddings" onclick="openLightbox('../assets/images/aden_gallery_1.jpg', 'Scottish wedding ceremony in ceremonial kilt attire')">
+          <img src="../assets/images/aden_gallery_1.jpg" alt="Scottish Wedding Ceremony" loading="lazy">
+          <div class="photo-overlay"><span class="photo-caption">Highland Wedding Processional</span></div>
+        </div>
+        <div class="photo-card" data-cat="ceremonies" onclick="openLightbox('../assets/images/aden_gallery_2.jpg', 'Ceremony tribute performance')">
+          <img src="../assets/images/aden_gallery_2.jpg" alt="Ceremony Performance" loading="lazy">
+          <div class="photo-overlay"><span class="photo-caption">Ceremonial Honors Performance</span></div>
+        </div>
+        <div class="photo-card" data-cat="parades" onclick="openLightbox('../assets/images/aden_gallery_3.jpg', 'Pipe band festival lineup')">
+          <img src="../assets/images/aden_gallery_3.jpg" alt="Pipe Band Festival Lineup" loading="lazy">
+          <div class="photo-overlay"><span class="photo-caption">Highland Gathering Ensemble</span></div>
+        </div>
+        <div class="photo-card" data-cat="weddings" onclick="openLightbox('../assets/images/aden_gallery_4.jpg', 'Private garden wedding bagpiper')">
+          <img src="../assets/images/aden_gallery_4.jpg" alt="Garden Wedding Bagpipes" loading="lazy">
+          <div class="photo-overlay"><span class="photo-caption">Private Garden Wedding Celebration</span></div>
+        </div>
+        <div class="photo-card" data-cat="ceremonies" onclick="openLightbox('../assets/images/aden_gallery_5.jpg', 'Highland games and Celtic festival gathering')">
+          <img src="../assets/images/aden_gallery_5.jpg" alt="Highland Gathering Performance" loading="lazy">
+          <div class="photo-overlay"><span class="photo-caption">Celtic Festival Gathering Performance</span></div>
+        </div>
+        <div class="photo-card" data-cat="memorials" onclick="openLightbox('../assets/images/aden_gallery_6.jpg', 'Memorial chapel prelude')">
+          <img src="../assets/images/aden_gallery_6.jpg" alt="Memorial Chapel Bagpipes" loading="lazy">
+          <div class="photo-overlay"><span class="photo-caption">Church &amp; Chapel Memorial Service</span></div>
+        </div>
+        <div class="photo-card" data-cat="parades" onclick="openLightbox('../assets/images/aden_gallery_7.jpg', 'Civic parade celebration')">
+          <img src="../assets/images/aden_gallery_7.jpg" alt="Civic Parade" loading="lazy">
+          <div class="photo-overlay"><span class="photo-caption">Civic Parade Celebration</span></div>
+        </div>
+        <div class="photo-card" data-cat="ceremonies" onclick="openLightbox('../assets/images/aden_gallery_8.jpg', 'Chanter coaching and bagpipe instruction')">
+          <img src="../assets/images/aden_gallery_8.jpg" alt="Bagpipe Technique Instruction" loading="lazy">
+          <div class="photo-overlay"><span class="photo-caption">Technique &amp; Repertory Mastery</span></div>
+        </div>
+        <div class="photo-card" data-cat="memorials" onclick="openLightbox('../assets/images/aden_gallery_9.jpg', 'Remembrance day ceremonies')">
+          <img src="../assets/images/aden_gallery_9.jpg" alt="Remembrance Day Bagpipes" loading="lazy">
+          <div class="photo-overlay"><span class="photo-caption">Remembrance Day Service</span></div>
+        </div>
+        <div class="photo-card" data-cat="weddings" onclick="openLightbox('../assets/images/aden_gallery_10.jpg', 'Church wedding exit with piping')">
+          <img src="../assets/images/aden_gallery_10.jpg" alt="Wedding Exit Bagpipes" loading="lazy">
+          <div class="photo-overlay"><span class="photo-caption">Ceremonial Wedding Recessional</span></div>
+        </div>
+        <div class="photo-card" data-cat="ceremonies" onclick="openLightbox('../assets/images/aden_gallery_11.jpg', 'Military honors and color guard')">
+          <img src="../assets/images/aden_gallery_11.jpg" alt="Color Guard Bagpiper" loading="lazy">
+          <div class="photo-overlay"><span class="photo-caption">Color Guard &amp; Honors Presentation</span></div>
+        </div>
+        <div class="photo-card" data-cat="parades" onclick="openLightbox('../assets/images/aden_gallery_12.jpg', 'Highland parade processional')">
+          <img src="../assets/images/aden_gallery_12.jpg" alt="Highland Parade" loading="lazy">
+          <div class="photo-overlay"><span class="photo-caption">Highland Parade Processional</span></div>
+        </div>
+        <div class="photo-card" data-cat="ceremonies" onclick="openLightbox('../assets/images/aden_gallery_13.jpg', 'Burns supper performance')">
+          <img src="../assets/images/aden_gallery_13.jpg" alt="Burns Supper Piping" loading="lazy">
+          <div class="photo-overlay"><span class="photo-caption">Traditional Burns Night Piping</span></div>
+        </div>
+        <div class="photo-card" data-cat="memorials" onclick="openLightbox('../assets/images/aden_gallery_14.jpg', 'Solemn sunset tribute')">
+          <img src="../assets/images/aden_gallery_14.jpg" alt="Solemn Sunset Bagpipes" loading="lazy">
+          <div class="photo-overlay"><span class="photo-caption">Solemn Sunset Remembrance Airs</span></div>
+        </div>
+        <div class="photo-card" data-cat="ceremonies" onclick="openLightbox('../assets/images/aden_gallery_15.jpg', 'Festival grand entry')">
+          <img src="../assets/images/aden_gallery_15.jpg" alt="Festival Grand Entry" loading="lazy">
+          <div class="photo-overlay"><span class="photo-caption">Highland Festival Grand Entry</span></div>
+        </div>
+        <div class="photo-card" data-cat="parades" onclick="openLightbox('../assets/images/aden_gallery_16.jpg', 'Albuquerque St. Patrick parade')">
+          <img src="../assets/images/aden_gallery_16.jpg" alt="St. Patrick Parade" loading="lazy">
+          <div class="photo-overlay"><span class="photo-caption">St. Patrick’s Day Parade Performance</span></div>
+        </div>
+        <div class="photo-card" data-cat="memorials" onclick="openLightbox('../assets/images/aden_gallery_18.jpg', 'Graveside walk-away piper tribute')">
+          <img src="../assets/images/aden_gallery_18.jpg" alt="Walk-Away Graveside Piper" loading="lazy">
+          <div class="photo-overlay"><span class="photo-caption">Distant Walk-Away Graveside Tribute</span></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Interactive Media Player / Lightbox Modal -->
+  <div class="modal-overlay" id="modalOverlay" onclick="closeModal(event)">
+    <div class="modal-content" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModal()">&times;</button>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
+
+  <!-- Massive Footer -->
+  <footer>
+    <div class="container">
+      <a href="../contact/" class="footer-fit-text">GET IN TOUCH</a>
+      <div class="footer-links">
+        <div class="footer-nav">
+          <a href="https://adenthepiper.com">ADENTHEPIPER.COM</a>
+          <a href="https://www.facebook.com/nmbagpipe" target="_blank" rel="noopener">FACEBOOK</a>
+          <a href="tel:5059770097">CALL (505) 977-0097</a>
+          <a href="mailto:adenthepiper@gmail.com">EMAIL ADEN</a>
+        </div>
+        <div class="copyright">
+          SUZANNE ADEN KEMP · ADEN THE PIPER 2026©
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/lenis.min.js"></script>
+  <script src="../assets/js/main.js"></script>
+  <script>
+    // Audio synthesis for live playable bagpipe demos
+    let audioCtx = null;
+    let currentOscillators = [];
+    let isPlayingAudio = false;
+
+    function stopBagpipeAudio() {
+      currentOscillators.forEach(osc => {
+        try { osc.stop(); osc.disconnect(); } catch(e){}
+      });
+      currentOscillators = [];
+      isPlayingAudio = false;
+    }
+
+    function playBagpipeSound(baseFreq) {
+      stopBagpipeAudio();
+      if (!audioCtx) {
+        audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+      }
+      if (audioCtx.state === 'suspended') {
+        audioCtx.resume();
+      }
+
+      // Highland bagpipe drone: Bass drone (Bb2, ~116 Hz) + 2 Tenor drones (Bb3, ~233 Hz) + Chanter melody note (~466 Hz)
+      const droneBass = audioCtx.createOscillator();
+      const droneTenor1 = audioCtx.createOscillator();
+      const droneTenor2 = audioCtx.createOscillator();
+      const chanter = audioCtx.createOscillator();
+
+      droneBass.type = 'sawtooth';
+      droneBass.frequency.setValueAtTime(baseFreq / 4, audioCtx.currentTime);
+
+      droneTenor1.type = 'sawtooth';
+      droneTenor1.frequency.setValueAtTime(baseFreq / 2, audioCtx.currentTime);
+
+      droneTenor2.type = 'sawtooth';
+      droneTenor2.frequency.setValueAtTime(baseFreq / 2 + 0.8, audioCtx.currentTime); // Slight natural detuning
+
+      chanter.type = 'sawtooth';
+      chanter.frequency.setValueAtTime(baseFreq, audioCtx.currentTime);
+
+      // Warm low-pass filter
+      const filter = audioCtx.createBiquadFilter();
+      filter.type = 'lowpass';
+      filter.frequency.setValueAtTime(1400, audioCtx.currentTime);
+
+      const gain = audioCtx.createGain();
+      gain.gain.setValueAtTime(0.01, audioCtx.currentTime);
+      gain.gain.exponentialRampToValueAtTime(0.18, audioCtx.currentTime + 0.3);
+
+      droneBass.connect(filter);
+      droneTenor1.connect(filter);
+      droneTenor2.connect(filter);
+      chanter.connect(filter);
+
+      filter.connect(gain);
+      gain.connect(audioCtx.destination);
+
+      droneBass.start();
+      droneTenor1.start();
+      droneTenor2.start();
+      chanter.start();
+
+      currentOscillators.push(droneBass, droneTenor1, droneTenor2, chanter);
+      isPlayingAudio = true;
+    }
+
+    // Modal Video / Audio Player
+    function openPlayer(title, desc, imgSrc, freq) {
+      const modal = document.getElementById('modalOverlay');
+      const body = document.getElementById('modalBody');
+
+      playBagpipeSound(freq);
+
+      body.innerHTML = `
+        <div style="background: #000; position: relative;">
+          <img src="${imgSrc}" style="width: 100%; max-height: 440px; object-fit: cover; opacity: 0.75;" alt="${title}">
+          <div style="position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; background: radial-gradient(circle, rgba(0,0,0,0.4) 0%, rgba(10,10,10,0.85) 100%);">
+            <div style="width: 72px; height: 72px; border-radius: 50%; background: #ffff00; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 30px rgba(255,255,0,0.5);">
+              <svg viewBox="0 0 24 24" style="width: 28px; height: 28px; fill: #0a0a0a; margin-left: 4px;"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            </div>
+            <div class="waveform-visualizer">
+              <div class="wave-bar" style="animation-delay: 0.1s;"></div>
+              <div class="wave-bar" style="animation-delay: 0.3s;"></div>
+              <div class="wave-bar" style="animation-delay: 0.5s;"></div>
+              <div class="wave-bar" style="animation-delay: 0.2s;"></div>
+              <div class="wave-bar" style="animation-delay: 0.4s;"></div>
+              <div class="wave-bar" style="animation-delay: 0.6s;"></div>
+            </div>
+            <span style="font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: #ffff00; font-weight: 700;">● Live Highland Bagpipe Audio Active</span>
+          </div>
+        </div>
+        <div style="padding: 28px 32px; background: #141414;">
+          <h3 style="font-size: 24px; font-weight: 900; margin-bottom: 8px; color: #fff;">${title}</h3>
+          <p style="font-size: 15px; color: #8a8a8a; line-height: 1.6; margin-bottom: 24px;">${desc}</p>
+          <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+            <button onclick="toggleAudio(${freq}, this)" class="video-action-btn" style="background: #ffff00; color: #0a0a0a; border-color: #ffff00;">❚❚ Pause Audio</button>
+            <a href="../contact/" class="video-action-btn" style="text-decoration: none;">Inquire About This Tune →</a>
+          </div>
+        </div>
+      `;
+
+      modal.classList.add('active');
+    }
+
+    function toggleAudio(freq, btn) {
+      if (isPlayingAudio) {
+        stopBagpipeAudio();
+        btn.textContent = '▶ Resume Audio';
+        btn.style.background = 'transparent';
+        btn.style.color = '#fff';
+      } else {
+        playBagpipeSound(freq);
+        btn.textContent = '❚❚ Pause Audio';
+        btn.style.background = '#ffff00';
+        btn.style.color = '#0a0a0a';
+      }
+    }
+
+    // Lightbox for Photos
+    function openLightbox(src, caption) {
+      stopBagpipeAudio();
+      const modal = document.getElementById('modalOverlay');
+      const body = document.getElementById('modalBody');
+
+      body.innerHTML = `
+        <div class="modal-media-wrap">
+          <img src="${src}" alt="${caption}">
+        </div>
+        <div style="padding: 20px 24px; background: #141414; display: flex; justify-content: space-between; align-items: center;">
+          <span style="font-size: 14px; font-weight: 600; color: #fff;">${caption}</span>
+          <a href="../contact/" style="font-size: 12px; color: #ffff00; text-decoration: none; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em;">Book Suzanne Aden Kemp →</a>
+        </div>
+      `;
+
+      modal.classList.add('active');
+    }
+
+    function closeModal() {
+      stopBagpipeAudio();
+      const modal = document.getElementById('modalOverlay');
+      modal.classList.remove('active');
+    }
+
+    // Photo Category Filtering
+    function filterPhotos(cat, btn) {
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      const cards = document.querySelectorAll('.photo-card');
+      cards.forEach(card => {
+        const itemCat = card.getAttribute('data-cat');
+        if (cat === 'all' || itemCat === cat) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    // Keyboard ESC to close modal
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeModal();
+    });
+  </script>
+</body>
+</html>
