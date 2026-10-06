@@ -165,12 +165,14 @@ document.addEventListener('DOMContentLoaded', () => {
         <a href="${basePath}projects/koto-running/" style="color: #fff; text-decoration: none; font-size: clamp(28px, 6vw, 56px); font-weight: 900; text-transform: uppercase; letter-spacing: -0.03em; transition: color 0.2s;">Weddings &amp; Celebrations</a>
         <a href="${basePath}contact/" style="color: #fff; text-decoration: none; font-size: clamp(28px, 6vw, 56px); font-weight: 900; text-transform: uppercase; letter-spacing: -0.03em; transition: color 0.2s;">Contact &amp; Booking</a>
       </div>
-      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 24px;">
         <div style="display: flex; gap: 24px;">
           <a href="tel:5059770097" style="color: #8a8a8a; text-decoration: none; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em;">(505) 977-0097</a>
           <a href="mailto:adenthepiper@gmail.com" style="color: #8a8a8a; text-decoration: none; font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em;">adenthepiper@gmail.com</a>
         </div>
-        <span style="color: #8a8a8a; font-size: 12px; text-transform: uppercase;">SUZANNE ADEN KEMP 2026©</span>
+        <div style="display: flex; flex-direction: column; align-items: flex-end; gap: 4px;">
+          <span style="color: #8a8a8a; font-size: 12px; text-transform: uppercase;">SUZANNE ADEN KEMP 2026©</span>
+          <span style="color: #777; font-size: 10px; text-transform: uppercase; letter-spacing: 0.08em;">Made with love by <a href="https://aiwebify.site" target="_blank" rel="noopener noreferrer" style="color: #ffff00; text-decoration: none; font-weight: 600;">AIwebify.site</a></span>
+        </div>
       </div>
     `;
     document.body.appendChild(navDrawer);
@@ -237,4 +239,30 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('resize', fitHeroTitle);
   window.addEventListener('load', fitHeroTitle);
 
+  // 6. Ensure Stats Numbers are always accurately 27+, 1000+, 5+ ★
+  function ensureStats() {
+    document.querySelectorAll('.framer-1pxl28-container').forEach(card => {
+      const numDiv = card.querySelector('.framer-ucp7xt-container div');
+      if (numDiv) numDiv.textContent = '27+';
+      const label = card.querySelector('p');
+      if (label) label.textContent = 'Years of Piping (Since 1999)';
+    });
+    document.querySelectorAll('.framer-1p05uxm-container').forEach(card => {
+      const numDiv = card.querySelector('.framer-ucp7xt-container div');
+      if (numDiv) numDiv.textContent = '1000+';
+      const label = card.querySelector('p');
+      if (label) label.textContent = 'Ceremonies Performed';
+    });
+    document.querySelectorAll('.framer-8m9pzh-container').forEach(card => {
+      const numDiv = card.querySelector('.framer-ucp7xt-container div');
+      if (numDiv) numDiv.textContent = '5+ ★';
+      const label = card.querySelector('p');
+      if (label) label.textContent = 'Star Satisfaction';
+    });
+  }
+
+  ensureStats();
+  setTimeout(ensureStats, 300);
+  setTimeout(ensureStats, 800);
+  setTimeout(ensureStats, 1800);
 });
